@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD, AGI</title>
+    <meta name="description" content="A little birthday page for Agi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Arial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stars" id="stars"></div>
+
+    <div class="dots" id="dots">
+        <button class="dot active" data-index="0" aria-label="Go to page 1"></button>
+        <button class="dot" data-index="1" aria-label="Go to page 2"></button>
+        <button class="dot" data-index="2" aria-label="Go to page 3"></button>
+        <button class="dot" data-index="3" aria-label="Go to page 4"></button>
+        <button class="dot" data-index="4" aria-label="Go to page 5"></button>
+        <button class="dot" data-index="5" aria-label="Go to page 6"></button>
+    </div>
+
+    <section class="page active" id="page1">
+        <h1>Welcome, Agi!</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfK1UVaVj8_lT6SCHXx4eROJ6BZUwEMrol0z-8INr7qA&s=10" id="posa" alt="A little preview">
+        <p>May I show you something? Ready ka na ba?</p>
+        <button class="btn" onclick="nextPage()">Next!!</button>
+    </section>
+
+    <section class="page" id="page2">
+        <span class="eyebrow">Before we start</span>
+        <h1>It's your day. <em>All of it.</em></h1>
+        <p>
+            Every month, I try to find a new way to tell you the same thing.
+            I love you. But today, I want to tell you something else. 
+            Something that I hope you never forget. Something that I hope 
+            you carry with you for the rest of your life. <br><br>
+        </p>
+        <div class="nav-row">
+            <button class="btn btn-ghost" onclick="prevPage()">← Back?</button>
+            <button class="btn" onclick="nextPage()">PATINGINNN →</button>
+        </div>
+    </section>
+
+    <section class="page memory-page" id="page3">
+        <span class="eyebrow">Where we started</span>
+        <img class="memory-photo" src="1st.jpg" alt="Memory one">
+        <p class="caption">
+            Dito nagsimula ang lovestory natin at dito ko ko din nalaman
+            na mahal na mahal kita. I thought love isnt for me at first but
+            you came and proved me wrong. Thankyou agi for being here sa tabi
+            ko kahit alam natin na delikado. You deserve the world agi. Hindi
+            pa man kita mabigyan ng mga mamahaling regalo, mamahaling bagay na
+            gusto mo pero I promise na someday I will give you all that you've
+            ever wanted. I love you agi :>
+
+        </p>
+        <div class="nav-row">
+            <button class="btn btn-ghost" onclick="prevPage()">← Back?</button>
+            <button class="btn" onclick="nextPage()">NEXTTT →</button>
+        </div>
+    </section>
+
+    <section class="page memory-page" id="page4">
+        <span class="eyebrow">Where we currently at</span>
+        <img class="memory-photo" src="2nd.jpg" alt="Memory two">
+        <p class="caption">
+            Nasa tricycle tayo neto and this is the moment that I realized
+            na hindi ko kayang mawala ka sa buhay ko, you were my joy and 
+            you were my everything. Even if hindi tayo madalas magkita dahil
+            salungat ang ating schedule I know na sayo pa rin ako uuwi. 
+            Palagi kang magi-ingat and don't lose hope, always be positive. 
+            Enjoy your day and don't forget to thank God. I'm very thankful 
+            that you exist and I wish you nothing but pure happiness, I hope 
+            this day brings you joy and umaapaw na love that you truly deserve. 
+            I love you agi :></p>
+        <div class="nav-row">
+            <button class="btn btn-ghost" onclick="prevPage()">← Back</button>
+            <button class="btn" onclick="nextPage()">NEXTTT →</button>
+        </div>
+    </section>
+
+    <section class="page" id="page5">
+        <span class="eyebrow">Something I want you to know</span>
+        <p class="letter">
+            Happy birthday, Agi. <br><br>
+            Hindi ko man ito madalas sabihin sayo but I want to let you know
+            na you make ordinary days feel like something worth remembering.
+            Thank you for your patience, your laugh, the way you risk for us.
+            I can't imagine my life without you. I won't let you down and also
+            fulfill the promises that I gave you. I love you agi :> <br><br>
+            I hope this year gives you everything you're aiming and hoping for,
+            and a few things you didn't even know to ask for :>.
+        </p>
+        <div class="nav-row">
+            <button class="btn btn-ghost" onclick="prevPage()">← Back?</button>
+            <button class="btn" onclick="nextPage()">Eto last na→</button>
+        </div>
+    </section>
+
+    <section class="page finale-page" id="page6">
+        <canvas id="fireworks-canvas" class="fireworks-canvas" aria-hidden="true"></canvas>
+        <div class="finale-content">
+            <h1 class="finale-title">Happy Birthday,<span class="finale-name">Agi</span></h1>
+            <div class="finale-divider"></div>
+            <p class="final-line">I hope this year gives you everything that you're aiming and hoping for. I love you agii.</p>
+            <button class="btn finale-btn" onclick="celebrate()">HAPPY BIRTHDAYYYY</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
